@@ -1,0 +1,37 @@
+.button,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+
+	@include button-transition;
+	background: $color__link;
+	border: none;
+	border-radius: 5px;
+	box-sizing: border-box;
+	color: $color__background-body;
+	@include font-family( $font__heading );
+	font-size: $font__size-sm;
+	font-weight: 700;
+	line-height: $font__line-height-heading;
+	outline: none;
+	padding: ( $size__spacing-unit * .30 ) $size__spacing-unit;
+	text-decoration: none;
+	vertical-align: bottom;
+
+	&:hover {
+		background: $color__link-hover;
+		cursor: pointer;
+	}
+
+	&:visited {
+		color: $color__link-hover;
+		text-decoration: none;
+	}
+
+	&:focus {
+		background: $color__link-hover;
+		outline: thin dotted;
+		outline-offset: -4px;
+	}
+}

@@ -1,0 +1,37 @@
+.social-icons {
+	padding: 20px 0;
+	margin: 20px 0;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	.social-icons-headline {
+		margin-bottom: 0;
+	}
+	ul {
+		padding: 0;
+		list-style: none;
+		display: flex;
+		li {
+			margin-right: 10px;
+			.icon {
+				svg {
+					path {
+						transition: all 0.3s ease-in-out;
+						height: 100%;
+						fill: $color__link;
+					}
+					&:hover {
+						path {
+							fill: #000;
+						}			
+					}
+				}			
+			}
+			.icon.whatsapp-icon,.icon.telegram-icon {
+				display: block;
+				@include media(tablet) {
+					display: none;
+				}
+			}
+		}
+	}
+}

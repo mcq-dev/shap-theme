@@ -1,0 +1,23 @@
+/** === Footer menu === */
+
+.footer-navigation {
+
+	display: inline;
+	float: right;
+
+	& > div {
+		display: inline;
+	}
+
+	.footer-menu {
+
+		display: inline;
+		padding-left: 0;
+
+		li {
+			display: inline;
+			margin-right: 1rem;
+		}
+	}
+
+}

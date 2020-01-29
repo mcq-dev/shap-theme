@@ -1,0 +1,15 @@
+.wpcf7-form {
+	.flex {
+		display: flex;
+		label {
+			width: 50%;
+			&:first-of-type {
+				margin-right: 20px;
+			}
+		}
+	}
+	.list {
+		display: flex;
+		flex-direction: column;
+	}
+}

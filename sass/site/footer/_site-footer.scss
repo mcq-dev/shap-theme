@@ -1,0 +1,117 @@
+/* Site footer */
+
+#colophon {
+	background-color: #f1f0f0;
+	clear: both;
+	position: relative;
+	z-index: 99;
+	.footer-navigation {
+		background-color: #2e343c;
+		width: 100%;
+		.menu-footer-container {
+			margin: calc(2 * 0.8rem) 1rem;
+			@include media(tablet) {
+				margin: calc(1 * 0.6rem) calc(2% + 20px);
+			}
+			li {
+				a {
+					color: #fff;
+					font-size: 14px;
+					&:hover {
+						color: $color__link;
+					}
+				}
+			}
+		}		
+	}
+	.widget-area,
+	.site-info {
+		margin: calc(2 * 0.8rem) 1rem;
+
+		@include media(tablet) {
+			margin: calc(1 * 0.6rem) calc(2% + 20px);
+		}
+	}
+
+	.widget-column {
+		display: flex;
+		flex-wrap: wrap;
+		.widget {
+			width: 100%;
+			@include media(desktop) {
+				margin-right: calc(3 * #{$size__spacing-unit});
+				width: calc(50% - (3 * #{$size__spacing-unit}));
+			}
+		}
+	}
+
+	.site-info {
+		  color: #fff;
+		.footer-sidebars {
+			display: block;
+			@include media(tablet) {
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+			}
+			h4 {
+				color: $color__text-main;
+				margin-top: 20px;
+				margin-bottom: 20px;
+			}
+			.img-wrapper {
+				width: 200px;
+			}
+			#footer-sidebar1 {
+				display: flex;
+				flex-direction: column;
+				width: 100%;
+				margin-right: 20px;
+				@include media(tablet) {
+					width: 20%;
+				}
+			}
+			#footer-sidebar2 {
+				width: 100%;
+				margin-right: 20px;
+				@include media(tablet) {
+					width: 25%;
+				}
+				.footer-sidebar2-group {
+					display: block;
+					margin-bottom: 10px;
+					@include media(tablet) {
+						display: flex;
+					}
+					a {
+						display: block;
+					}
+					.img-wrapper {
+						&:first-of-type {
+							margin-right: 10px;
+						}
+					}
+				}
+			}
+			#footer-sidebar3 {
+				width: 100%;
+				@include media(tablet) {
+					width: 20%;
+				}
+			}
+		}
+		a {
+			color: inherit;
+			font-size: $font__size-md;
+			&:hover {
+				text-decoration: none;
+				color: $color__link;
+			}
+		}
+
+		.imprint,
+		.privacy-policy-link {
+			margin-right: $size__spacing-unit;
+		}
+	}
+}
